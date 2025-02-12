@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+body {
+    background-color: #f9f9f9;
+}
+
+
+main {
+    background-image: url('mainbg.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navigation {
+    display: flex;
+    align-items: center;
+
+}
+
+nav .navigation li {
+    margin-right: 20px;
+}
+
+nav .navigation li a {
+    color: white;
+}
+
+
+nav .navigation li .btn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.hero {
+    /* background-color: red; */
+    margin-top: 70px;
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 250px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.location-box {
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.location-box i {
+    color: red;
+    margin: 0 5px;
+}
+
+.location-box input {
+    border: none;
+    background: none;
+    font-size: 16px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* //////////////////////////////////// */
+/* container  */
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fetures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    /* Adjust width as needed */
+    background: white;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.card .content {
+    padding: 15px;
+}
+
+.card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+
+/* ///////////////////////////////////////////////// */
+/* collections  */
+
+.collections-box {
+    /* background-size: cover; */
+    /* Ensures the image fills the container */
+    /* background-position: center; */
+    /* Centers the image */
+    background-repeat: no-repeat;
+    /* Prevents image repetition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.collections-box {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.collection {
+    width: 250px;
+    height: 400px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.collection:hover {
+    transform: scale(1.05);
+}
+
+.collection::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    z-index: 2;
+}
+
+.collection-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.collection-info {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* /////////////////////////////////////////////////// */
+
+
+.location {
+    /* max-width: 800px; */
+    margin: auto;
+}
+h2 {
+    text-align: left;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+.card {
+    background: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+.card p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* ///////////////////////////////////////////////////////// */
+
+.get-app{
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+
+}
+.get-app .left{
+    width: 50%;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+.get-app .right{
+    width: 50%;
+}
+.get-app .left img{
+    width: 400px;
+}
+.get-app .right .sel {
+    display: flex;
+
+}
+
+.sel {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Hide default radio button */
+.sel input[type="radio"] {
+    display: none;
+}
+
+/* Custom radio button styling */
+.sel label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Custom circle inside label */
+.sel label::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* When selected, make it red */
+.sel input[type="radio"]:checked + label {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+.sel input[type="radio"]:checked + label::before {
+    background-color: white;
+    border-color: white;
+}
+
+/* Hover effect */
+.sel label:hover {
+    border-color: red;
+    color: red;
+}
+
+.sel2 input[type="email"]{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+.sel2 input[type="button"]{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #d6d6d6;
+    color: white;
+}
+
+/* ///////////////////////////////////////////////////////////// */
+
+.explore{
+    width: 90%;
+    display: flex;
+    /* align-items: center; */
+    text-align: left;
+    flex-direction: column;
+
+}
+.explore-card {
+    padding-left: 40px;
+    align-items: center;
+    background: white;
+    display: flex;
+    border: 0.1px solid silver;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    /* margin: 5px; */
+
+}
+
+
+/* ////////////////////////////////////////////////////////////////////// */
+
+footer{
+   
+    display: flex;
+    flex-direction: column;
+}
+footer .top {
+    /* width: 100%; */
+    display: flex;
+    padding-left: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-color: red; */
+}
+footer .top .right{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+}
+
+footer .top .right .box {
+    width: 100px;
+    height: 40px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    /* background-color:red; */
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer2{
+    background: #f8f8f8;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+}
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.footer-column i{
+    width: 20px;
+    font-size: 10px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+.social-links a {
+    font-size: 18px;
+}
+.app-links img {
+    width: 120px;
+    display: block;
+    margin-top: 10px;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    border-top: 1px solid gray;
+    /* background: #eaeaea; */
+}
+
